@@ -30,6 +30,10 @@ class User
   property :note,                 Text
   property :status,               Integer, default: 0
   
+  has n, :ideas
+  has n, :meeting_user_links
+  has n, :meetings, through: :meeting_user_links
+  
   def self.active
     all(status: 0)
   end
@@ -68,6 +72,47 @@ module UsersRepresenter
 
   collection :users, extend: UserRepresenter, class: User
 	
+end
+
+class Idea
+  include DataMapper::Resource
+  
+  property :id,                   Serial
+  property :title,                String
+  property :note,                 Text
+  
+  belongs_to :user
+  belongs_to :meeting, required: false
+  
+  def self.in_meetings
+    all(:meeting.not => nil)
+  end
+  
+  def self.alone
+    all(meeting: nil)
+  end
+
+end
+
+class Meeting
+  include DataMapper::Resource
+  
+  property :id,                   Serial
+  property :description,          String
+  property :date,                 DateTime
+  
+  has n, :meeting_user_links
+  has n, :users, through: :meeting_user_links
+  has n, :ideas
+
+end
+
+class MeetingUserLink
+  include DataMapper::Resource
+  
+  belongs_to :meeting, key: true
+  belongs_to :user, key: true
+
 end
 
 module Implementation
