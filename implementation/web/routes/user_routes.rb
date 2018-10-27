@@ -18,6 +18,22 @@ module Implementation
       @user = User.get(params[:id]).extend(UserRepresenter).to_hash
       mustache :'users/profile'
     end
+    
+    # create a user
+    post "/users/?" do
+      @user = User.new.extend(UserRepresenter)
+      @user.from_hash(params)
+      @user.save
+      redirect "/users/"
+    end
+    
+    # update a user (including logical delete using status)
+    post "/users/:user_id/?" do
+      @user = User.get(params[:user_id]).extend(UserRepresenter)
+      @user.from_hash(params)
+      @user.save
+      redirect "/users/#{@user.id}/"
+    end
   
   end
 end
