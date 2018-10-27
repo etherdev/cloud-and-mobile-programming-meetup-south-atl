@@ -3,7 +3,7 @@ module Implementation
 
     # index of users
     get "/users/?" do
-      @title_tag = "User List"
+      @title = "User List"
       if params[:status]
         @users = User.public_send(params[:status]).extend(UsersRepresenter)
       else
@@ -14,7 +14,7 @@ module Implementation
     
     # instance of a user
     get "/users/:id/?" do
-      @title_tag = "User"
+      @title = "User"
       @user = User.get(params[:id]).extend(UserRepresenter).to_hash
       mustache :'users/profile'
     end
