@@ -24,7 +24,7 @@ module Implementation
       @user = User.new.extend(UserRepresenter)
       @user.from_hash(params)
       @user.save
-      redirect "/users/"
+      redirect "/users/#{@user.id}/"
     end
     
     # update a user (including logical delete using status)
