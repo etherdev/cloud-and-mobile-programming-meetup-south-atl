@@ -5,3 +5,33 @@
     <li><a href="/users/{{id}}/">{{first_name}} {{last_name}}</a></li>
   {{/users}}
 </ul>
+
+<h2>Create User</h2>
+
+<h1>Update Profile</h1>
+<form action="/users/" method="post">
+    <div class="form-group">
+        <label>Email</label>
+        <input type="text" name="email" value="{{email}}" required>
+    </div>
+  
+    <div class="form-group">
+        <label>First Name</label>
+        <input type="text" name="first_name" value="{{first_name}}" required>
+    </div>
+
+    <div class="form-group">
+        <label>Last Name</label>
+        <input type="text" name="last_name" value="{{last_name}}" required>
+    </div>
+
+    <div class="form-group">
+        <label>Phone</label>
+        <input type="tel" name="phone" value="{{phone}}" required>
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Save">
+    </div>
+
+</form>
