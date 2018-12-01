@@ -135,7 +135,7 @@ Likewise, you can use the pgAdmin UI and add or drop your database as well.
 In the files for both the *config.ru* and *pry.rb* files, you will need to change your username for postgres:
 
 ```
-DataMapper.setup(:default, 'postgres://yourname:@localhost/meetup_api')
+DataMapper.setup(:default, 'postgres://yourusername:@localhost/meetup_api')
 ```
 
 ### Start the Server
