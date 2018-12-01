@@ -13,7 +13,7 @@ class User
   property :first_name,           String
   property :last_name,            String
   property :phone,                String
-  property :birthday,             DateTime
+  property :birthday,             Date
   property :gender,               Integer
   property :note,                 Text
   property :status,               Integer, default: 0
