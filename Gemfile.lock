@@ -32,6 +32,8 @@ GEM
       dm-core (~> 1.2.0)
     dm-migrations (1.2.0)
       dm-core (~> 1.2.0)
+    dm-noisy-failures (0.2.3)
+      data_mapper
     dm-postgres-adapter (1.2.0)
       dm-do-adapter (~> 1.2.0)
       do_postgres (~> 0.10.6)
@@ -130,6 +132,7 @@ PLATFORMS
 DEPENDENCIES
   data_mapper
   database_cleaner
+  dm-noisy-failures
   dm-postgres-adapter
   dm-rspec
   mustache (~> 0.99.6)

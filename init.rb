@@ -10,6 +10,7 @@ require 'roar/representer/feature/hypermedia'
 require 'pry'
 require 'pry-remote'
 require 'pry-doc'
+require 'dm-noisy-failures'
 
 # Load all entities first.
 Dir["./app/entities/*.rb"].each do |file|

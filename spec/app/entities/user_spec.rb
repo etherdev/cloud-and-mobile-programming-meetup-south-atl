@@ -22,7 +22,7 @@ describe User do
 
     it "should have the appropriate message for an improperly formatted email" do
       user_1.email = "string"
-      expect{user_1.save}.to raise_error("AdminUser: Doesn't look like an email address to me ...")
+      expect{user_1.save}.to raise_error("User: Doesn't look like an email address to me ...")
     end
 
 	end

@@ -10,6 +10,7 @@ require 'pry'
 require 'roar/representer/json'
 require 'roar/representer/feature/hypermedia'
 require 'database_cleaner'
+require 'dm-noisy-failures'
 require_relative 'shared_lets'
 
 # Load all domain files.
@@ -17,7 +18,7 @@ Dir["./app/entities/*.rb"].each do |file|
  require file
 end
 
-DataMapper.setup(:default, 'postgres://jimmyether:@localhost/meetup_test')
+DataMapper.setup(:default, 'postgres://yourusername:@localhost/meetup_test')
 DataMapper.finalize.auto_upgrade!
 
 RSpec.configure do |conf|
