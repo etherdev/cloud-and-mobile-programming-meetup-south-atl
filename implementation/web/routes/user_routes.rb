@@ -16,6 +16,7 @@ module Implementation
     get "/users/:id/?" do
       @title = "User"
       @user = User.get(params[:id]).extend(UserRepresenter).to_hash
+      @ideas = User.get(params[:id]).ideas
       mustache :'users/profile'
     end
     

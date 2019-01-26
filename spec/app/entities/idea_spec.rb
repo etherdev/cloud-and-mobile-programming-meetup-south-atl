@@ -12,6 +12,15 @@ describe Idea do
     
 	end
   
+	describe '#description' do
+  	
+		it "should set a String" do
+			idea_1.save
+		  expect(idea_1.description).to be_kind_of String
+		end
+    
+	end
+  
 	describe '#note' do
   	
 		it "should set a String" do
