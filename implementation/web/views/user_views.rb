@@ -6,7 +6,7 @@ module Implementation
         class Index < Layout
 
           def users
-            @users
+            @users["users"]
           end
           
         end

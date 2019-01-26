@@ -16,6 +16,10 @@ module Implementation
       
       class Failure < Layout
         
+        def errors
+          @errors
+        end
+        
       end
       
     end

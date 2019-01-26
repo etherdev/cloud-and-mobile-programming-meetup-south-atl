@@ -1,7 +1,11 @@
 <h1>User List</h1>
+<p><a href="/users/">[All]</a> - <a href="/users?status=active">[Active]</a> - <a href="/users?status=inactive">[Inactive]</a> - <a href="/users?status=deleted">[Deleted]</a></p>
 <ul>
   {{#users}}
     <li><a href="/users/{{id}}/">{{first_name}} {{last_name}}</a></li>
+  {{/users}}
+  {{^users}}
+    No users found.
   {{/users}}
 </ul>
 
@@ -25,6 +29,11 @@
     <div class="form-group">
         <label>Phone</label>
         <input type="tel" name="phone" value="{{phone}}" required>
+    </div>
+    
+    <div class="form-group">
+        <label>Note:</label><br>
+        <textarea type="text" name="note">{{note}}</textarea>
     </div>
 
     <div class="form-group">
