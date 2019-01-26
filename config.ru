@@ -1,6 +1,6 @@
 require './init.rb'
 
-DataMapper.setup(:default, 'postgres://jimmyether:@localhost/meetup_api')
+DataMapper.setup(:default, 'postgres://yourusername:@localhost/meetup_api')
 DataMapper.finalize.auto_upgrade!
 
 app = Rack::Builder.new do
