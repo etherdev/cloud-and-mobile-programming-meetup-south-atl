@@ -1,0 +1,4 @@
+en:
+  errors:
+    standard_error: "We're sorry. Something went wrong and our engineers are looking into it."
+    user_not_found: "We're sorry. This User was not found."

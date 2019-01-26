@@ -13,6 +13,32 @@ module UserRepresenter
   
 end
 
+module UserCreateRepresenter
+  include Roar::Representer::JSON
+
+  property :email
+  property :first_name
+  property :last_name
+  property :phone
+  property :birthday
+  property :gender
+  property :note
+  
+end
+
+module UserUpdateRepresenter
+  include Roar::Representer::JSON
+
+  property :email
+  property :first_name
+  property :last_name
+  property :phone
+  property :birthday
+  property :gender
+  property :note
+  
+end
+
 module UsersRepresenter
   include Roar::Representer::JSON
 

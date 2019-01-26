@@ -11,6 +11,8 @@ require 'pry'
 require 'pry-remote'
 require 'pry-doc'
 require 'dm-noisy-failures'
+require 'i18n'
+require 'i18n/backend/fallbacks'
 
 # Load all entities first.
 Dir["./app/entities/*.rb"].each do |file|
@@ -32,3 +34,11 @@ require './implementation/web/views/global_views.rb'
 Dir["./implementation/**/*.rb"].each do |file|
   require file
 end
+
+# Load all lib files.
+Dir["./lib/**/*.rb"].each do |file|
+  require file
+end
+
+# Configure internationalization
+I18n.load_path = Dir['config/localization.yml']

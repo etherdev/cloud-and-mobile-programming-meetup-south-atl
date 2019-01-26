@@ -1,4 +1,10 @@
 <h1>User Profile</h1>
+{{#flash}}
+  <div data-alert class="flash alert-box radius">
+    {{flash.success}}
+    <a href="#" class="close">&times;</a>
+  </div>
+{{/flash}}
 {{#user}}
 <ul>
     <li>ID: {{id}}</li>
@@ -6,9 +12,6 @@
     <li>Frist Name: {{first_name}}</li>
     <li>Last Name: {{last_name}}</li>
     <li>Phone: {{phone}}</li>
-    <li>Birthday: {{birthday}}</li>
-    <li>Gender: {{gender}}</li>
-    <li>Status: {{status}}</li>
 </ul>
 <p>
   Note:<br/>
@@ -34,6 +37,11 @@
     <div class="form-group">
         <label>Phone</label>
         <input type="tel" name="phone" value="{{phone}}">
+    </div>
+    
+    <div class="form-group">
+        <label>Note:</label><br>
+        <textarea type="text" name="note">{{note}}</textarea>
     </div>
 
     <div class="form-group">
