@@ -18,7 +18,7 @@ Dir["./app/entities/*.rb"].each do |file|
  require file
 end
 
-DataMapper.setup(:default, 'postgres://barbarafraim:@localhost/meetup_test')
+DataMapper.setup(:default, 'postgres://jimmyether:@localhost/meetup_test')
 DataMapper.finalize.auto_upgrade!
 
 RSpec.configure do |conf|
