@@ -1,0 +1,79 @@
+/*
+========================
+Modules-Buttons
+========================
+*/
+
+form input[type=submit],
+.submit-button {
+	background: $blue;
+	color: white;
+	padding: 0 2em;
+	text-transform: uppercase;
+	overflow: hidden;
+	margin-top: .8em;
+	cursor: pointer;
+	border-radius: 2px;
+	height: 36px;
+	line-height: 36px;
+	transition: all 0.2s ease-out;
+	border: 0 !important;
+	vertical-align: middle;
+	display: inline-block;
+	letter-spacing: .5px;
+	width: auto;
+	font-size: .8em;
+	font-weight: 400 !important;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+	&:hover {
+		background: darken($blue, 5%);
+		transition: all 0.2s ease-in;
+	}
+}
+
+.next-button {
+	background: $blue;
+	color: white;
+	padding: 0 2em;
+	text-transform: uppercase;
+	overflow: hidden;
+	margin-top: 2em;
+	cursor: pointer;
+	border-radius: 2px;
+	height: 36px;
+	line-height: 36px;
+	transition: all 0.2s ease-out;
+	border: 0 !important;
+	vertical-align: middle;
+	display: inline-block;
+	letter-spacing: .5px;
+	width: auto;
+	font-size: .8em;
+	font-weight: 400 !important;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+	&:hover {
+		background: darken($blue, 5%);
+		transition: all 0.2s ease-in;
+	}
+}
+
+.submit-button,
+.cancel-button {
+	display: inline-block !important;
+}
+
+.cancel {
+	background: $red !important;
+
+	&:hover {
+		background: darken($red, 10%) !important;
+	}
+}
+
+
+.cancel + input[type="submit"] {
+	margin-bottom: 0 !important;
+	margin-left: 5px;
+}

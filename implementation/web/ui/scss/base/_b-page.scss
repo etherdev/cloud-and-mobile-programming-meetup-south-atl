@@ -1,0 +1,50 @@
+/*
+========================
+Header
+========================
+*/
+
+.row {
+  clear: both;
+  overflow: hidden;
+  height: auto;
+  position: relative;
+  padding: 0 50px;
+}
+
+.site-header {
+  padding-top: 20px;
+  background: $blue;
+  width: 100%;
+}
+
+.logo {
+  width: 20%;
+  float: left;
+  padding-left: 2%;
+  padding-right: 3%;
+}
+
+.logo img {
+	width: 100px;
+}
+
+.nav-block {
+  width: 60%;
+  float: left;
+  padding-left: 3%;
+  padding-right: 2%;
+}
+
+.nav-block ul {
+  list-style: none;
+}
+
+.nav-block ul li {
+  float: left;
+  margin: 1.2em;
+}
+
+.nav-block ul li a {
+  color: $white;
+}

@@ -1,0 +1,659 @@
+/*
+========================
+Colors
+========================
+*/
+/*
+========================
+Base-Base
+========================
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font: 100%/1.5 'Roboto', Arial, sans-serif;
+}
+
+body {
+  background: #dddddd;
+  font-family: 'Roboto', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.87);
+  width: 100%;
+  height: 100%;
+}
+
+iframe, video, img {
+  max-width: 100%;
+}
+
+main a {
+  color: #2fbfda;
+  font-weight: bold;
+}
+
+/*
+========================
+Header
+========================
+*/
+.row {
+  clear: both;
+  overflow: hidden;
+  height: auto;
+  position: relative;
+  padding: 0 50px;
+}
+
+.site-header {
+  padding-top: 20px;
+  background: #2fbfda;
+  width: 100%;
+}
+
+.logo {
+  width: 20%;
+  float: left;
+  padding-left: 2%;
+  padding-right: 3%;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.nav-block {
+  width: 60%;
+  float: left;
+  padding-left: 3%;
+  padding-right: 2%;
+}
+
+.nav-block ul {
+  list-style: none;
+}
+
+.nav-block ul li {
+  float: left;
+  margin: 1.2em;
+}
+
+.nav-block ul li a {
+  color: #ffffff;
+}
+
+/*
+========================
+Base-Typography
+========================
+*/
+h1, h2, h3, h4, h5 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 0.83em;
+}
+
+p {
+  line-height: 1.5;
+  margin: 0 0 1em;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+code, pre {
+  font-family: monospace, serif;
+  font-size: .9em;
+  background: whitesmoke;
+  padding-left: 1em;
+  display: block;
+}
+
+pre {
+  border-top: 1px solid whitesmoke;
+  border-bottom: 1px solid whitesmoke;
+  padding: .5em 0;
+  margin-bottom: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol {
+  margin-left: 2.5em;
+}
+
+ul {
+  margin-left: 2.5em;
+}
+
+/*
+========================
+Modules-Forms
+========================
+*/
+input, textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
+form {
+  font-size: inherit;
+  font-family: inherit;
+}
+form .row {
+  overflow: hidden;
+}
+form .three-col:first-of-type, form .four-col:first-of-type, form .six-col:first-of-type {
+  margin-left: 0;
+}
+form .three-col:last-of-type, form .four-col:last-of-type, form .six-col:last-of-type {
+  margin-right: 0;
+}
+form textarea {
+  text-align: left;
+  font-size: .8em !important;
+  max-width: 100%;
+}
+form b {
+  font-size: 1.1em;
+  margin-left: 5px;
+  color: #525252;
+  text-shadow: 1px 1px 1px whitesmoke;
+  font-weight: bold;
+  text-shadow: none;
+}
+form input, form textarea, form .dataTables_filter input {
+  display: block;
+  border: 1px solid #d8d8d8;
+  font-size: .8em;
+  padding: 7px 10px;
+  transition: all 0.1s ease-out;
+  width: 100%;
+  font-family: inherit;
+  margin-bottom: .5em;
+  border-radius: 3px;
+  color: rgba(0, 0, 0, 0.54);
+}
+form select {
+  font: normal normal normal 20px/normal 'Roboto' !important;
+  font-size: .8em !important;
+  border: 1px solid #000;
+}
+form select option {
+  font-family: 'Roboto';
+}
+form input[type="text"]:disabled {
+  cursor: not-allowed;
+  background: rgba(204, 204, 204, 0.2);
+}
+form input [type="text"] {
+  display: block;
+  width: 300px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 17px;
+  margin-bottom: 5px;
+  background: white;
+  padding: 7px 10px;
+}
+form input:focus, form textarea:focus {
+  outline: none;
+  transition: all 0.1s ease-in;
+  border: 1px solid #00b32c;
+}
+form input[type=radio] {
+  transform: 0;
+  border-radius: 0;
+  box-shadow: 0;
+  margin-left: 4px;
+}
+form label, form span {
+  display: block;
+  overflow: hidden;
+  margin-bottom: .2em;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: .7em;
+}
+
+select:focus {
+  border: 0;
+  outline: none;
+}
+
+/*
+========================
+Labels
+========================
+*/
+label.error {
+  width: 100% !important;
+}
+
+label.error {
+  color: red;
+  padding-top: 0;
+  margin-bottom: 0;
+}
+
+input.error {
+  border: 1px solid red;
+}
+
+.addendum-error {
+  color: red;
+  padding-top: 0;
+  margin-bottom: 0;
+  width: 40%;
+}
+
+/*
+========================
+Page Specific Form
+========================
+*/
+.add-distributor-form input[type="submit"],
+.add-fund-form input[type="submit"],
+.add-user-form input[type="submit"] {
+  margin-top: 1em;
+}
+
+/*
+========================
+Account
+========================
+*/
+#result + .account-form-row {
+  margin-top: 1em;
+}
+
+.add-fund-form input[type="radio"] {
+  margin-top: 8px;
+  margin-right: 8px;
+}
+
+.radio-field {
+  margin-bottom: .5em;
+  font-size: .8em;
+}
+
+.setup-form input[type="text"],
+.setup-form input[type="email"],
+.setup-form input[type="url"],
+.setup-form input[type="tel"],
+.setup-form input[type="number"] {
+  width: 55%;
+  font-size: .9em;
+}
+.setup-form .six-col input[type="text"] {
+  width: 95%;
+}
+.setup-form label {
+  font-size: .8em;
+}
+
+.checkbox-fieldset {
+  clear: both;
+  display: block;
+  margin-bottom: .5em;
+  overflow: hidden;
+  position: relative;
+  padding-left: 1px;
+}
+.checkbox-fieldset .error {
+  display: inline-block !important;
+  width: auto !important;
+}
+.checkbox-fieldset input {
+  -webkit-appearance: checkbox !important;
+  -moz-appearance: checkbox !important;
+  -ms-appearance: checkbox !important;
+  -o-appearance: checkbox !important;
+  appearance: checkbox !important;
+  float: left;
+  width: auto;
+  vertical-align: middle;
+  margin-bottom: 0;
+  position: relative;
+  top: 4px;
+}
+.checkbox-fieldset label {
+  padding-top: 0;
+  margin-left: 1em;
+  display: block;
+  float: left;
+}
+
+input[type="radio"] {
+  -webkit-appearance: radio !important;
+  appearance: radio !important;
+  float: left;
+  width: auto;
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+
+.radio {
+  margin-top: .2em;
+}
+
+.radio input {
+  line-height: 1.2em;
+  display: inline-block;
+  margin-bottom: 1em;
+  width: auto;
+  margin-bottom: 0;
+  position: relative;
+  top: 5px;
+  margin-right: 10px;
+}
+
+.radio span {
+  overflow: visible;
+  padding-top: 0;
+}
+
+form select {
+  margin-bottom: 1em;
+  background: white;
+  border: #fafafa;
+}
+
+/*
+========================
+General Form Style
+========================
+*/
+.uneditable-row {
+  margin: 1em 0;
+}
+
+.ion-field {
+  background: #fff url("/images/ion-logo-dark.png") no-repeat center right;
+  background-size: 12%;
+}
+
+/*********************
+Radio Group
+*********************/
+.radio-group {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-bottom: 8px;
+}
+.radio-group input {
+  margin-right: 5px;
+}
+.radio-group label {
+  margin-bottom: 0 !important;
+}
+
+.radio-group-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 1em;
+  margin-top: .5em;
+}
+.radio-group-wrapper div {
+  width: 33%;
+}
+.radio-group-wrapper label {
+  font-size: .8em;
+}
+
+.form-group {
+  margin-bottom: .5em;
+}
+
+h3 + .form-group {
+  margin-top: 1.5em;
+}
+
+.row + input[type="text"] {
+  margin-top: .5em;
+}
+
+.checkbox-fieldset + input[type="text"] {
+  margin-top: .5em;
+}
+
+.info-box {
+  font-size: .7em;
+  color: rgba(0, 0, 0, 0.54);
+  margin: .4em 0;
+}
+
+/*
+========================
+All fields required
+========================
+*/
+.all-fields-required {
+  margin-bottom: 2em !important;
+}
+
+/*
+========================
+Hours form group
+========================
+*/
+/*
+========================
+Table Checkbox
+========================
+*/
+table input[type="checkbox"] {
+  -webkit-appearance: checkbox !important;
+  -moz-appearance: checkbox !important;
+  -ms-appearance: checkbox !important;
+  -o-appearance: checkbox !important;
+  appearance: checkbox !important;
+  float: left;
+  width: auto;
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+
+/*
+========================
+Edit Form
+========================
+*/
+form.edit-form {
+  width: 80% !important;
+}
+
+/*
+========================
+SBC Signup
+========================
+*/
+.ion-category .radio-group,
+.gratuity-default-option .radio-group,
+.rewards-default-option .radio-group {
+  width: 100% !important;
+}
+.ion-category .radio-group label,
+.gratuity-default-option .radio-group label,
+.rewards-default-option .radio-group label {
+  padding-left: 5px;
+}
+.ion-category .radio-group input,
+.gratuity-default-option .radio-group input,
+.rewards-default-option .radio-group input {
+  width: 20px;
+}
+
+/*
+========================
+Flex Description before input
+========================
+*/
+.flex-description-input {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-top: .5em;
+}
+.flex-description-input p {
+  width: 20%;
+  margin-bottom: 0 !important;
+  text-align: left !important;
+  top: 0 !important;
+  font-size: .9em;
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+.flex-description-input input {
+  margin-bottom: 0;
+}
+
+.table-checkboxes {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 1em 0 1.5em 0;
+}
+.table-checkboxes div {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-right: 10px;
+}
+.table-checkboxes input {
+  -webkit-appearance: checkbox !important;
+  -moz-appearance: checkbox !important;
+  -ms-appearance: checkbox !important;
+  -o-appearance: checkbox !important;
+  appearance: checkbox !important;
+  float: left;
+  width: auto;
+  vertical-align: middle;
+  margin-bottom: 0;
+  position: relative;
+  margin-right: 5px;
+  height: 14px;
+  width: 15px;
+}
+.table-checkboxes label {
+  margin-bottom: 0;
+  font-size: .8em;
+}
+
+/*
+========================
+Tables generated by start end
+========================
+*/
+/*
+========================
+Modules-Buttons
+========================
+*/
+form input[type=submit],
+.submit-button {
+  background: #2fbfda;
+  color: white;
+  padding: 0 2em;
+  text-transform: uppercase;
+  overflow: hidden;
+  margin-top: .8em;
+  cursor: pointer;
+  border-radius: 2px;
+  height: 36px;
+  line-height: 36px;
+  transition: all 0.2s ease-out;
+  border: 0 !important;
+  vertical-align: middle;
+  display: inline-block;
+  letter-spacing: .5px;
+  width: auto;
+  font-size: .8em;
+  font-weight: 400 !important;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+form input[type=submit]:hover,
+.submit-button:hover {
+  background: #24b1cb;
+  transition: all 0.2s ease-in;
+}
+
+.next-button {
+  background: #2fbfda;
+  color: white;
+  padding: 0 2em;
+  text-transform: uppercase;
+  overflow: hidden;
+  margin-top: 2em;
+  cursor: pointer;
+  border-radius: 2px;
+  height: 36px;
+  line-height: 36px;
+  transition: all 0.2s ease-out;
+  border: 0 !important;
+  vertical-align: middle;
+  display: inline-block;
+  letter-spacing: .5px;
+  width: auto;
+  font-size: .8em;
+  font-weight: 400 !important;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.next-button:hover {
+  background: #24b1cb;
+  transition: all 0.2s ease-in;
+}
+
+.submit-button,
+.cancel-button {
+  display: inline-block !important;
+}
+
+.cancel {
+  background: #ff0000 !important;
+}
+.cancel:hover {
+  background: #cc0000 !important;
+}
+
+.cancel + input[type="submit"] {
+  margin-bottom: 0 !important;
+  margin-left: 5px;
+}

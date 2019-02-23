@@ -1,60 +1,62 @@
-<h1>User Profile</h1>
-{{#flash}}
-  <div data-alert class="flash alert-box radius">
-    {{flash.success}}
-    <a href="#" class="close">&times;</a>
-  </div>
-{{/flash}}
-{{#user}}
-<ul>
-    <li>ID: {{id}}</li>
-    <li>Email: {{email}}</li>
-    <li>Frist Name: {{first_name}}</li>
-    <li>Last Name: {{last_name}}</li>
-    <li>Phone: {{phone}}</li>
-</ul>
-<p>
-  Note:<br/>
-  {{note}}
-</p>
-<h1>Update Profile</h1>
-<form action="/users/{{id}}" method="post">
-    <div class="form-group">
-        <label>Email</label>
-        <input type="text" name="email" value="{{email}}" required>
+<div class="row">
+  <h1>User Profile</h1>
+  {{#flash}}
+    <div data-alert class="flash alert-box radius">
+      {{flash.success}}
+      <a href="#" class="close">&times;</a>
     </div>
+  {{/flash}}
+  {{#user}}
+  <ul>
+      <li>ID: {{id}}</li>
+      <li>Email: {{email}}</li>
+      <li>Frist Name: {{first_name}}</li>
+      <li>Last Name: {{last_name}}</li>
+      <li>Phone: {{phone}}</li>
+  </ul>
+  <p>
+    Note:<br/>
+    {{note}}
+  </p>
+  <h1>Update Profile</h1>
+  <form action="/users/{{id}}" method="post">
+      <div class="form-group">
+          <label>Email</label>
+          <input type="text" name="email" value="{{email}}" required>
+      </div>
   
-    <div class="form-group">
-        <label>First Name</label>
-        <input type="text" name="first_name" value="{{first_name}}" required>
-    </div>
+      <div class="form-group">
+          <label>First Name</label>
+          <input type="text" name="first_name" value="{{first_name}}" required>
+      </div>
 
-    <div class="form-group">
-        <label>Last Name</label>
-        <input type="text" name="last_name" value="{{last_name}}" required>
-    </div>
+      <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" name="last_name" value="{{last_name}}" required>
+      </div>
 
-    <div class="form-group">
-        <label>Phone</label>
-        <input type="tel" name="phone" value="{{phone}}">
-    </div>
+      <div class="form-group">
+          <label>Phone</label>
+          <input type="tel" name="phone" value="{{phone}}">
+      </div>
     
-    <div class="form-group">
-        <label>Note:</label><br>
-        <textarea type="text" name="note">{{note}}</textarea>
-    </div>
+      <div class="form-group">
+          <label>Note:</label><br>
+          <textarea type="text" name="note">{{note}}</textarea>
+      </div>
 
-    <div class="form-group">
-        <input type="submit" value="Save">
-    </div>
+      <div class="form-group">
+          <input type="submit" value="Save">
+      </div>
 
-</form>
-<h2>Ideas</h2>
+  </form>
+  <h2>Ideas</h2>
 
-<ul>
-  {{#ideas}}
-    <li>{{title}}</li>
-  {{/ideas}}
-</ul>
+  <ul>
+    {{#ideas}}
+      <li>{{title}}</li>
+    {{/ideas}}
+  </ul>
 
-{{/user}}
+  {{/user}}
+</div>
