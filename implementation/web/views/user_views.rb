@@ -17,6 +17,10 @@ module Implementation
             @user
           end
           
+          def ideas
+            @ideas
+          end
+          
         end
         
       end

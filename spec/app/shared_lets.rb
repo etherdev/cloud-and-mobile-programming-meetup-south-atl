@@ -1,6 +1,7 @@
 shared_context "shared lets" do
 	
   let(:idea_1) {Idea.new(title: "string",
+                         description: "string",
                          note: "string",
                          user: user_1,
                          meeting: meeting_1
