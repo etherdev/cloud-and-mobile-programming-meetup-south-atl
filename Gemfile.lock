@@ -122,8 +122,6 @@ GEM
       rack (~> 2.0)
       rack-protection (= 2.0.3)
       tilt (~> 2.0)
-    sinatra-flash (0.3.0)
-      sinatra (>= 1.0.0)
     slop (3.6.0)
     stringex (1.5.1)
     tilt (2.0.8)
@@ -153,7 +151,6 @@ DEPENDENCIES
   roar (= 0.12.9)
   rspec (~> 2.11)
   sinatra
-  sinatra-flash
 
 BUNDLED WITH
    1.16.2

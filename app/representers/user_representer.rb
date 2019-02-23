@@ -20,8 +20,6 @@ module UserCreateRepresenter
   property :first_name
   property :last_name
   property :phone
-  property :birthday
-  property :gender
   property :note
   
 end
@@ -33,8 +31,6 @@ module UserUpdateRepresenter
   property :first_name
   property :last_name
   property :phone
-  property :birthday
-  property :gender
   property :note
   
 end

@@ -14,7 +14,7 @@ module Implementation
       end
     end
 
-    # index of users
+    ##index of users
     # get "/users/?" do
     #   @title = "User List"
     #   if params[:status]
@@ -24,7 +24,7 @@ module Implementation
     #   end
     #   mustache :'users/index'
     # end
-    
+
 
     # instance of a user
     get "/users/:user_id/?" do
