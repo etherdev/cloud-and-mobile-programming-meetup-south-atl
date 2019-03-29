@@ -1,0 +1,21 @@
+
+implementation/web-react/node_modules
+implementation/web-react/.pnp
+implementation/web-react/.pnp.js
+
+# testing
+implementation/web-react/coverage
+
+# production
+implementation/web-react/build
+
+# misc
+implementation/web-react/.DS_Store
+implementation/web-react/.env.local
+implementation/web-react/.env.development.local
+implementation/web-react/.env.test.local
+implementation/web-react/.env.production.local
+
+implementation/web-react/npm-debug.log*
+implementation/web-react/yarn-debug.log*
+implementation/web-react/yarn-error.log*

@@ -1,5 +1,6 @@
 source 'http://rubygems.org'
 gem 'sinatra'
+gem 'sinatra-cross_origin'
 gem 'data_mapper'
 gem 'pg'
 gem 'dm-postgres-adapter'
