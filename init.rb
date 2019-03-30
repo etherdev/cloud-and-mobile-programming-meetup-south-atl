@@ -13,6 +13,7 @@ require 'pry-doc'
 require 'dm-noisy-failures'
 require 'i18n'
 require 'i18n/backend/fallbacks'
+require 'sinatra/cross_origin'
 
 # Load all entities first.
 Dir["./app/entities/*.rb"].each do |file|
