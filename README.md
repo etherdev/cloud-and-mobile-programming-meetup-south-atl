@@ -22,16 +22,16 @@ Next, install Ruby Version Manager [RVM](https://rvm.io/rvm/install), which will
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
 ```
 
-Then install version 2.3.7
+Then install version 2.6.5
 
 ```
-rvm install 2.3.7
+rvm install 2.6.5
 ```
 
-Next, set version 2.3.7 as your default
+Next, set version 2.6.5 as your default
 
 ```
-rvm --default use 2.3.7
+rvm --default use 2.6.5
 ```
 
 Finally, create a gemset to hold the gems you install for the project
@@ -43,7 +43,7 @@ rvm gemset create meetup
 And set your terminal to use the gemset
 
 ```
-rvm use 2.3.7@meetup
+rvm use 2.6.5@meetup
 ```
 
 ### Install PostgreSQL
@@ -55,7 +55,7 @@ Next, install the [Command Line Tools](https://postgresapp.com/documentation/cli
 You may need to close your Terminal window and open a new one for the changes to take affect. Any time you open a new Terminal window, you need to reset your rvm gemset again:
 
 ```
-rvm use 2.3.7@meetup
+rvm use 2.6.5@meetup
 ```
 
 See the After Install instructions below to run the app.
@@ -167,4 +167,4 @@ ls
 
 Follow along with the videos here:
 
-https://www.facebook.com/pg/websuasion/videos/
+https://websuasion.com/learn-app-development-south-atlanta/
